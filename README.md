@@ -1,563 +1,129 @@
-[index.html.rtf](https://github.com/user-attachments/files/23785311/index.html.rtf)
+[index.html.rtf](https://github.com/user-attachments/files/23785387/index.html.rtf)
 {\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17520\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 .SFNS-Regular_wdth_opsz110000_GRAD_wght2580000;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red13\green14\blue17;\red255\green255\blue255;\red43\green71\blue253;
+\red247\green249\blue250;}
+{\*\expandedcolortbl;;\cssrgb\c5882\c6667\c8235;\cssrgb\c100000\c100000\c100000;\cssrgb\c22353\c39216\c99608;
+\cssrgb\c97647\c98039\c98431;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa320\partightenfactor0
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>GEARUP BY AZAM - Car Repair Manuals</title>\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
-    <style>\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-        \}\
-\
-        :root \{\
-            --primary: #00ff88;\
-            --secondary: #0077ff;\
-            --accent: #ff2d55;\
-            --background: #000000;\
-            --card-bg: rgba(255,255,255,0.1);\
-            --text-primary: #ffffff;\
-            --text-secondary: #cccccc;\
-        \}\
-\
-        body \{\
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
-            background: var(--background);\
-            color: var(--text-primary);\
-            min-height: 100vh;\
-            overflow-x: hidden;\
-        \}\
-\
-        /* iOS 16 Glass Morphism */\
-        .glass \{\
-            background: rgba(255, 255, 255, 0.1);\
-            backdrop-filter: blur(20px);\
-            border: 1px solid rgba(255, 255, 255, 0.2);\
-            border-radius: 20px;\
-        \}\
-\
-        /* Background Logo */\
-        .bg-logo \{\
-            position: fixed;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 25vw;\
-            font-weight: 900;\
-            color: rgba(0, 255, 136, 0.03);\
-            z-index: -2;\
-            white-space: nowrap;\
-            pointer-events: none;\
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;\
-        \}\
-\
-        .bg-logo-small \{\
-            position: fixed;\
-            bottom: 30px;\
-            right: 30px;\
-            font-size: 8vw;\
-            font-weight: 900;\
-            color: rgba(255, 255, 255, 0.02);\
-            z-index: -1;\
-            pointer-events: none;\
-        \}\
-\
-        /* Header */\
-        .header \{\
-            padding: 60px 20px 30px;\
-            text-align: center;\
-        \}\
-\
-        .main-title \{\
-            font-size: 3.5rem;\
-            font-weight: 800;\
-            background: linear-gradient(135deg, var(--primary), var(--secondary));\
-            -webkit-background-clip: text;\
-            -webkit-text-fill-color: transparent;\
-            margin-bottom: 10px;\
-        \}\
-\
-        .subtitle \{\
-            font-size: 1.2rem;\
-            color: var(--text-secondary);\
-            margin-bottom: 30px;\
-        \}\
-\
-        /* Search Bar iOS Style */\
-        .search-container \{\
-            max-width: 400px;\
-            margin: 0 auto 40px;\
-        \}\
-\
-        .search-box \{\
-            background: rgba(255, 255, 255, 0.15);\
-            border-radius: 15px;\
-            padding: 15px 20px;\
-            display: flex;\
-            align-items: center;\
-            gap: 12px;\
-        \}\
-\
-        .search-box i \{\
-            color: var(--text-secondary);\
-        \}\
-\
-        .search-box input \{\
-            background: none;\
-            border: none;\
-            color: var(--text-primary);\
-            font-size: 1rem;\
-            width: 100%;\
-            outline: none;\
-        \}\
-\
-        .search-box input::placeholder \{\
-            color: var(--text-secondary);\
-        \}\
-\
-        /* Brands Grid */\
-        .container \{\
-            max-width: 1200px;\
-            margin: 0 auto;\
-            padding: 0 20px;\
-        \}\
-\
-        .section-title \{\
-            font-size: 1.8rem;\
-            font-weight: 700;\
-            margin-bottom: 25px;\
-            padding-left: 15px;\
-        \}\
-\
-        .brands-grid \{\
-            display: grid;\
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));\
-            gap: 15px;\
-            margin-bottom: 50px;\
-        \}\
-\
-        .brand-card \{\
-            background: var(--card-bg);\
-            backdrop-filter: blur(20px);\
-            border: 1px solid rgba(255, 255, 255, 0.1);\
-            border-radius: 18px;\
-            padding: 25px 15px;\
-            text-align: center;\
-            text-decoration: none;\
-            color: var(--text-primary);\
-            transition: all 0.3s ease;\
-            position: relative;\
-            overflow: hidden;\
-        \}\
-\
-        .brand-card::before \{\
-            content: '';\
-            position: absolute;\
-            top: 0;\
-            left: 0;\
-            right: 0;\
-            height: 2px;\
-            background: linear-gradient(90deg, var(--primary), var(--secondary));\
-            transform: scaleX(0);\
-            transition: transform 0.3s ease;\
-        \}\
-\
-        .brand-card:hover \{\
-            transform: translateY(-5px);\
-            border-color: rgba(0, 255, 136, 0.3);\
-        \}\
-\
-        .brand-card:hover::before \{\
-            transform: scaleX(1);\
-        \}\
-\
-        .brand-logo \{\
-            font-size: 2.5rem;\
-            margin-bottom: 12px;\
-            height: 50px;\
-            display: flex;\
-            align-items: center;\
-            justify-content: center;\
-        \}\
-\
-        .brand-name \{\
-            font-weight: 600;\
-            font-size: 0.95rem;\
-        \}\
-\
-        .brand-stats \{\
-            font-size: 0.75rem;\
-            color: var(--text-secondary);\
-            margin-top: 8px;\
-        \}\
-\
-        /* Car Brand Backgrounds */\
-        .toyota-bg::before \{\
-            content: 'TOYOTA';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 4rem;\
-            font-weight: 900;\
-            color: rgba(255, 0, 0, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .honda-bg::before \{\
-            content: 'HONDA';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 4rem;\
-            font-weight: 900;\
-            color: rgba(255, 0, 0, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .bmw-bg::before \{\
-            content: 'BMW';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 4rem;\
-            font-weight: 900;\
-            color: rgba(0, 0, 255, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .mercedes-bg::before \{\
-            content: 'MERCEDES';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 3rem;\
-            font-weight: 900;\
-            color: rgba(255, 255, 255, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .audi-bg::before \{\
-            content: 'AUDI';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 4rem;\
-            font-weight: 900;\
-            color: rgba(255, 0, 0, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .ford-bg::before \{\
-            content: 'FORD';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 4rem;\
-            font-weight: 900;\
-            color: rgba(0, 0, 255, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        .chevrolet-bg::before \{\
-            content: 'CHEVROLET';\
-            position: absolute;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            font-size: 2.5rem;\
-            font-weight: 900;\
-            color: rgba(255, 255, 255, 0.03);\
-            z-index: -1;\
-        \}\
-\
-        /* Features Section */\
-        .features \{\
-            display: grid;\
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
-            gap: 20px;\
-            margin: 60px 0;\
-        \}\
-\
-        .feature-card \{\
-            background: var(--card-bg);\
-            backdrop-filter: blur(20px);\
-            border-radius: 18px;\
-            padding: 25px;\
-            text-align: center;\
-        \}\
-\
-        .feature-icon \{\
-            font-size: 2.5rem;\
-            margin-bottom: 15px;\
-            color: var(--primary);\
-        \}\
-\
-        .feature-title \{\
-            font-size: 1.2rem;\
-            font-weight: 600;\
-            margin-bottom: 10px;\
-        \}\
-\
-        .feature-desc \{\
-            color: var(--text-secondary);\
-            font-size: 0.9rem;\
-        \}\
-\
-        /* Footer */\
-        .footer \{\
-            text-align: center;\
-            padding: 40px 20px;\
-            color: var(--text-secondary);\
-            font-size: 0.9rem;\
-        \}\
-\
-        .footer-brand \{\
-            font-size: 1.5rem;\
-            font-weight: 800;\
-            background: linear-gradient(135deg, var(--primary), var(--secondary));\
-            -webkit-background-clip: text;\
-            -webkit-text-fill-color: transparent;\
-            margin-bottom: 10px;\
-        \}\
-\
-        /* Mobile Responsive */\
-        @media (max-width: 768px) \{\
-            .main-title \{\
-                font-size: 2.5rem;\
-            \}\
-            \
-            .brands-grid \{\
-                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));\
-            \}\
-            \
-            .bg-logo \{\
-                font-size: 20vw;\
-            \}\
-        \}\
-\
-        @media (max-width: 480px) \{\
-            .main-title \{\
-                font-size: 2rem;\
-            \}\
-            \
-            .brands-grid \{\
-                grid-template-columns: repeat(2, 1fr);\
-            \}\
-        \}\
-\
-        /* Animation */\
-        @keyframes float \{\
-            0%, 100% \{ transform: translateY(0px); \}\
-            50% \{ transform: translateY(-10px); \}\
-        \}\
-\
-        .floating \{\
-            animation: float 3s ease-in-out infinite;\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <!-- Background Logos -->\
-    <div class="bg-logo floating">GEARUP</div>\
-    <div class="bg-logo-small">AZAM</div>\
-\
-    <!-- Header -->\
-    <div class="header">\
-        <h1 class="main-title">GEARUP</h1>\
-        <p class="subtitle">by Azam \'95 Complete Car Repair Manuals</p>\
-        \
-        <div class="search-container">\
-            <div class="search-box glass">\
-                <i class="fas fa-search"></i>\
-                <input type="text" placeholder="Search DTC codes, parts, procedures...">\
-            </div>\
-        </div>\
-    </div>\
-\
-    <!-- Main Content -->\
-    <div class="container">\
-        <!-- American Brands -->\
-        <h2 class="section-title">\uc0\u55356 \u56826 \u55356 \u56824  American Cars</h2>\
-        <div class="brands-grid">\
-            <a href="chevrolet/index.html" class="brand-card chevrolet-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">Chevrolet</div>\
-                <div class="brand-stats">200+ Models</div>\
-            </a>\
-            \
-            <a href="ford/index.html" class="brand-card ford-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-truck-pickup"></i>\
-                </div>\
-                <div class="brand-name">Ford</div>\
-                <div class="brand-stats">180+ Models</div>\
-            </a>\
-            \
-            <a href="dodge/index.html" class="brand-card">\
-                <div class="brand-logo">\
-                    <i class="fas fa-bolt"></i>\
-                </div>\
-                <div class="brand-name">Dodge</div>\
-                <div class="brand-stats">90+ Models</div>\
-            </a>\
-            \
-            <a href="tesla/index.html" class="brand-card">\
-                <div class="brand-logo">\
-                    <i class="fas fa-bolt"></i>\
-                </div>\
-                <div class="brand-name">Tesla</div>\
-                <div class="brand-stats">15+ Models</div>\
-            </a>\
-        </div>\
-\
-        <!-- Japanese Brands -->\
-        <h2 class="section-title">\uc0\u55356 \u56815 \u55356 \u56821  Japanese Cars</h2>\
-        <div class="brands-grid">\
-            <a href="toyota/index.html" class="brand-card toyota-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car-side"></i>\
-                </div>\
-                <div class="brand-name">Toyota</div>\
-                <div class="brand-stats">150+ Models</div>\
-            </a>\
-            \
-            <a href="honda/index.html" class="brand-card honda-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">Honda</div>\
-                <div class="brand-stats">120+ Models</div>\
-            </a>\
-            \
-            <a href="nissan/index.html" class="brand-card">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">Nissan</div>\
-                <div class="brand-stats">110+ Models</div>\
-            </a>\
-            \
-            <a href="mazda/index.html" class="brand-card">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">Mazda</div>\
-                <div class="brand-stats">80+ Models</div>\
-            </a>\
-        </div>\
-\
-        <!-- European Brands -->\
-        <h2 class="section-title">\uc0\u55356 \u56810 \u55356 \u56826  European Cars</h2>\
-        <div class="brands-grid">\
-            <a href="bmw/index.html" class="brand-card bmw-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">BMW</div>\
-                <div class="brand-stats">120+ Models</div>\
-            </a>\
-            \
-            <a href="mercedes-benz/index.html" class="brand-card mercedes-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-star"></i>\
-                </div>\
-                <div class="brand-name">Mercedes</div>\
-                <div class="brand-stats">130+ Models</div>\
-            </a>\
-            \
-            <a href="audi/index.html" class="brand-card audi-bg">\
-                <div class="brand-logo">\
-                    <i class="fas fa-rings"></i>\
-                </div>\
-                <div class="brand-name">Audi</div>\
-                <div class="brand-stats">90+ Models</div>\
-            </a>\
-            \
-            <a href="volkswagen/index.html" class="brand-card">\
-                <div class="brand-logo">\
-                    <i class="fas fa-car"></i>\
-                </div>\
-                <div class="brand-name">Volkswagen</div>\
-                <div class="brand-stats">80+ Models</div>\
-            </a>\
-        </div>\
-\
-        <!-- Features -->\
-        <div class="features">\
-            <div class="feature-card glass">\
-                <div class="feature-icon">\
-                    <i class="fas fa-tools"></i>\
-                </div>\
-                <h3 class="feature-title">Complete Repair Manuals</h3>\
-                <p class="feature-desc">Step-by-step procedures for every vehicle system</p>\
-            </div>\
-            \
-            <div class="feature-card glass">\
-                <div class="feature-icon">\
-                    <i class="fas fa-bolt"></i>\
-                </div>\
-                <h3 class="feature-title">All DTC Codes</h3>\
-                <p class="feature-desc">Every diagnostic trouble code with solutions</p>\
-            </div>\
-            \
-            <div class="feature-card glass">\
-                <div class="feature-icon">\
-                    <i class="fas fa-plug"></i>\
-                </div>\
-                <h3 class="feature-title">Wiring Diagrams</h3>\
-                <p class="feature-desc">Complete electrical schematics for all models</p>\
-            </div>\
-        </div>\
-    </div>\
-\
-    <!-- Footer -->\
-    <div class="footer">\
-        <div class="footer-brand">GEARUP BY AZAM</div>\
-        <p>Free Car Repair Manuals \'95 1982-2025 Models</p>\
-        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">\
-            Professional repair information for everyone\
-        </p>\
-    </div>\
-\
-    <script>\
-        // Search functionality\
-        document.querySelector('.search-box input').addEventListener('keypress', function(e) \{\
-            if (e.key === 'Enter') \{\
-                const searchTerm = this.value;\
-                if (searchTerm) \{\
-                    alert(`Searching for: "$\{searchTerm\}"\\n\\nThis would search all car manuals in the complete version.`);\
-                \}\
-            \}\
-        \});\
-\
-        // Add hover effects\
-        document.querySelectorAll('.brand-card').forEach(card => \{\
-            card.addEventListener('mouseenter', function() \{\
-                this.style.transform = 'translateY(-8px) scale(1.02)';\
-            \});\
-            \
-            card.addEventListener('mouseleave', function() \{\
-                this.style.transform = 'translateY(0) scale(1)';\
-            \});\
-        \});\
-    </script>\
-</body>\
-</html>}
+\f0\b\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u55357 \u56983  Car Repair Manuals - GEARUP BY AZAM\
+\pard\pardeftab720\sa320\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://img.shields.io/badge/Status-Live-success"}}{\fldrslt 
+\f1\b0\fs32 \cf4 \strokec4 https://img.shields.io/badge/Status-Live-success}}
+\f1\b0\fs32 \cb1 \uc0\u8232 {\field{\*\fldinst{HYPERLINK "https://img.shields.io/badge/Template-Public-blue"}}{\fldrslt \cf4 \cb3 \strokec4 https://img.shields.io/badge/Template-Public-blue}}\uc0\u8232 {\field{\*\fldinst{HYPERLINK "https://img.shields.io/badge/HTML-100%2525-orange"}}{\fldrslt \cf4 \cb3 \strokec4 https://img.shields.io/badge/HTML-100%2525-orange}}\cb3 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\b \cf2 Free car repair manuals for all brands
+\f1\b0 \'a0- A comprehensive collection of automotive repair guides and technical documentation.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \uc0\u55357 \u56534  About This Project\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b0\fs32 \cf2 This repository serves as a public template containing free car repair manuals and technical documentation for various vehicle brands. Whether you're a DIY mechanic, automotive student, or professional technician, you'll find valuable resources here.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \uc0\u55357 \u57056 \u65039  What's Included\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\fs32 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 HTML-based manuals
+\f1\b0 \'a0and documentation\cb1 \
+\ls1\ilvl0
+\f2\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Step-by-step repair guides
+\f1\b0 \cb1 \
+\ls1\ilvl0
+\f2\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Technical specifications
+\f1\b0 \cb1 \
+\ls1\ilvl0
+\f2\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Maintenance procedures
+\f1\b0 \cb1 \
+\ls1\ilvl0
+\f2\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Troubleshooting guides
+\f1\b0 \cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \cb3 \uc0\u55357 \u56960  How to Use\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 For Viewing:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Browse the files above\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Click on any HTML file to view the manual\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use your web browser to navigate the content\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs40 \cf2 \cb3 For Using This Template:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f1\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Click the\'a0
+\f2\b "Use this template"
+\f1\b0 \'a0button above\cb1 \
+\ls3\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create your own repository with this structure\cb1 \
+\ls3\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Add your own car manual content\cb1 \
+\ls3\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Customize and share with others!\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \cb3 \uc0\u55357 \u56513  Repository Structure\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b0\fs24 \cf2 \cb5 text
+\f1\fs25\fsmilli12573 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf2 \cb5 car-repair-manuals-gearup-azam/\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  index.html          # Main entry point\
+\uc0\u9500 \u9472 \u9472  README.md           # This file\
+\uc0\u9492 \u9472 \u9472  [additional folders for different brands]\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \cb3 \uc0\u55358 \u56605  Contributing\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b0\fs32 \cf2 We welcome contributions! If you have car repair manuals to share:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Fork this repository\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Add your manuals (preferably in HTML format)\cb1 \
+\ls4\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Submit a Pull Request\cb1 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \cb3 \uc0\u55357 \u56516  License\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b0\fs32 \cf2 This project is intended for educational and informational purposes. Please respect copyright laws and only share content that you have permission to distribute.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs44 \cf2 \uc0\u55357 \u56542  Contact\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs32 \cf2 Maintained by:
+\f1\b0 \'a0Azam Hamza\cb1 \uc0\u8232 
+\f2\b \cb3 Project:
+\f1\b0 \'a0GEARUP BY AZAM\
+}
